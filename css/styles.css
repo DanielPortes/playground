@@ -8,8 +8,7 @@ body {
     justify-content: center;
 }
 
-html
-{
+html {
     font-size: 62.5%;
 }
 
@@ -42,6 +41,7 @@ a {
     width: 64px;
     height: 64px;
 }
+
 .nav__list {
     width: 100%;
     margin: 0;
@@ -82,7 +82,7 @@ a {
 
 /* buttons */
 
-.btn{
+.btn {
     background: #C51ECA;
     border-radius: 5px;
     border: 0;
@@ -91,25 +91,25 @@ a {
     font-size: 3rem;
     outline: 0;
     padding: 1rem 2rem;
+    margin-top: 0.5rem
 }
 
 .btn:hover {
     background: #ca59ce
 }
 
-.btn--contact{
+.btn--contact {
     margin: 2rem 0rem;
 }
 
 /* forms */
 
-.form-group{
+.form-group {
     margin: 1rem 0rem;
 }
 
-.form-contact{
+.form-contact, .form-signin {
     max-width: 300px;
-    /*text-align: center;*/
     width: 100%;
 }
 
@@ -119,6 +119,7 @@ a {
     outline: 0;
     transition: border .15s, box-shadow .15s;
 }
+
 .form-control:focus {
     border: 1px solid #86b7fe;
     box-shadow: 0 0 0 5px #b9d3fa;
@@ -133,21 +134,77 @@ a {
 
 /* labels */
 
-::placeholder{
+label {
+    margin: 0.2rem
+}
+
+::placeholder {
     color: rgb(37, 37, 37);
     opacity: 0.4;
     margin: 5rem;
 }
 
-label{
-    margin: 0.2rem
-}
-
 /* inputs */
 
-.input__message{
+.input__message {
     height: 15rem;
     resize: none;
     width: 100%;
-    
+
 }
+
+/* Cards */
+
+.card {
+    background: #F1EEEE;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card__body {
+    margin: 0.5rem;
+}
+
+.card__footer {
+    margin: 1rem;
+}
+
+
+.card--admin {
+
+
+}
+
+.card__image {
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.card > .btn {
+
+}
+
+.card__line {
+    width: 80%;
+    border: 1px solid #f1dc95;
+    margin: 1.5rem;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Icons */
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon--white {
+    fill: #fff;
+}
+
