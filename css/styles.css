@@ -144,15 +144,6 @@ label {
     margin: 5rem;
 }
 
-/* inputs */
-
-.input__message {
-    height: 15rem;
-    resize: none;
-    width: 100%;
-
-}
-
 /* Cards */
 
 .card {
@@ -171,19 +162,9 @@ label {
     margin: 1rem;
 }
 
-
-.card--admin {
-
-
-}
-
 .card__image {
     margin-top: 1rem;
     width: 50%;
-}
-
-.card > .btn {
-
 }
 
 .card__line {
@@ -208,3 +189,39 @@ label {
     fill: #fff;
 }
 
+/* Inputs */
+
+.input__message {
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+.input-group {
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    color: black;
+    font-size: 2rem;
+    outline: 0;
+    padding: 0.5rem 0.5rem;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+    margin: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 2.5rem;
+    }
+}
