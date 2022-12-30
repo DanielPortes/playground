@@ -91,14 +91,17 @@ a {
     font-size: 3rem;
     outline: 0;
     padding: 1rem 2rem;
-    margin-top: 0.5rem
+    margin-top: 2rem 0;
+
 }
 
 .btn:hover {
     background: #ca59ce
 }
 
-.btn--contact {
+.btn--contact,
+.btn--welcome
+{
     margin: 2rem 0rem;
 }
 
