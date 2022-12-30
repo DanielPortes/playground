@@ -1,0 +1,55 @@
+
+<form class="form-contact" action="" method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input
+                class="form-control input__name"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required
+                minlength="5"
+                maxlength="100"
+                autofocus
+        />
+    </div>
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input
+                class="form-control input__email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+                maxlength="100"
+
+        />
+    </div>
+
+    <div class="form-group">
+        <label for="assunto">Assunto</label>
+        <input
+                class="form-control input__subject"
+                type="text"
+                name="assunto"
+                id="assunto"
+                placeholder="Enter the subject"
+                required
+                maxlength="100"
+        />
+    </div>
+    <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea
+                class="form-control input__message"
+                id="mensagem" name="mensagem"
+                placeholder="Write something.."
+                required
+                maxlength="512"
+        ></textarea>
+    </div>
+    <button class="btn btn--contact">Send</button>
+</form>
+
