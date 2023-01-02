@@ -1,7 +1,8 @@
 /* Typography */
-:root{
+:root {
     --primary-color: #ca59ce;
 }
+
 body {
     align-items: center;
     display: flex;
@@ -92,10 +93,21 @@ a {
     color: #fff;
     cursor: pointer;
     font-size: 1.8rem;
+    margin: 0.5rem 0.3rem;
     outline: 0;
     padding: 2rem;
-    margin: 2rem 0;
+    text-align: center;
     transition: background 0.15s;
+    white-space: nowrap;
+}
+
+.btn-group {
+    display: flex;
+    background: #C51ECA;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 70%;
+    justify-content: space-between;
 }
 
 .btn:hover {
@@ -121,33 +133,17 @@ a {
     background: #ca59ce;
 }
 
-.btn-group {
-    display: flex;
-    background: #C51ECA;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 70%;
-    justify-content: space-between;
-}
-
 /* Icons */
 
 .icon {
-    width: 32px;
-    height: 32px;
-    margin: 0 auto;
+    transform: scale(1.30);
+    width: 24px;
+    height: 24px;
 }
 
 .icon--white {
     fill: #fff;
 }
-
-.btn .icon {
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-}
-
 
 /* forms */
 
@@ -204,6 +200,7 @@ label {
 .card__body {
     margin: 0.5rem;
 }
+
 
 .card__footer {
     margin: 1rem;
