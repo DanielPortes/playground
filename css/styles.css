@@ -1,4 +1,7 @@
 /* Typography */
+:root{
+    --primary-color: #ca59ce;
+}
 body {
     align-items: center;
     display: flex;
@@ -88,11 +91,11 @@ a {
     border: 0;
     color: #fff;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 1.8rem;
     outline: 0;
-    padding: 1rem 2rem;
-    margin-top: 2rem 0;
-
+    padding: 2rem;
+    margin: 2rem 0;
+    transition: background 0.15s;
 }
 
 .btn:hover {
@@ -100,10 +103,51 @@ a {
 }
 
 .btn--contact,
-.btn--welcome
-{
+.btn--welcome {
     margin: 2rem 0rem;
 }
+
+.btn-group .btn--forward {
+    transform: rotateY(180deg);
+}
+
+.btn-group .btn {
+    background: none;
+    margin: 0.5rem 1rem;
+    padding: 0;
+}
+
+.btn-group .btn:hover {
+    background: #ca59ce;
+}
+
+.btn-group {
+    display: flex;
+    background: #C51ECA;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 70%;
+    justify-content: space-between;
+}
+
+/* Icons */
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.icon--white {
+    fill: #fff;
+}
+
+.btn .icon {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
 
 /* forms */
 
@@ -173,23 +217,7 @@ label {
 .card__line {
     width: 80%;
     border: 1px solid #f1dc95;
-    margin: 1.5rem;
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Icons */
-
-.icon {
-    width: 24px;
-    height: 24px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.icon--white {
-    fill: #fff;
+    margin: 1.5rem auto;
 }
 
 /* Inputs */
@@ -199,6 +227,7 @@ label {
     resize: none;
     width: 100%;
 }
+
 .input-group {
     border-radius: 5px;
     border: 1px solid rgb(0, 0, 0, 0.2);
@@ -208,8 +237,7 @@ label {
     padding: 0.5rem 0.5rem;
 }
 
-input:focus
-{
+input:focus {
     outline: none;
 }
 
@@ -228,3 +256,5 @@ input:focus
         font-size: 2.5rem;
     }
 }
+
+
